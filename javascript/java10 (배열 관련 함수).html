@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // 배열관련 함수 사용
+    const colors = ['red', 'blue', 'green'];
+    console.log('original Array: ', colors);
+    
+    colors.push('yello');
+    console.log('push("yello"): ', colors);
+    
+    colors.pop();
+    console.log('pop(): ', colors);
+    
+    colors.reverse();
+    console.log('reverse(): ', colors);
+
+    colors.sort();
+    console.log('sort(): ', colors);
+    
+    const splicedcolors = colors.splice(0, 2);
+    console.log('splice(): ',splicedcolors);
+    
+    const newColors = colors.join('-');
+    console.log('join(): ',newColors);
+    
+    // splice()의 경우 시작인덱스, 제거할 데이터 수를 파라미터로 지정.
+    // 0 인덱스에서 2개의 값을 잘라 리턴하므로 blue, green이 새로운 배열로 저장.
+    // join()은 지정한 구분자를 이용한 새로운 배열을 리턴.
+})
+</script>
+
+<body>
+
+</body>
+</html>

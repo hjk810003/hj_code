@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // MAP 기본 예제
+    // 반복문을 돌며 배열안의 요소들을 1대1로 짝지어 주는것.
+    // 배열.map((요소, 인덱스, 배열) => {return 요소});
+    
+    const map = new Map();
+    map.set('210401','KIM');
+    map.set('210402','MO');
+    map.set('210403','HOON');
+    
+    console.log('## original data: forEach with arrow ##')
+    map.forEach((value, key) => console.log(key, value));
+    
+    console.log('## original data: for-of ##')
+    for (let item of map) {
+        console.log(item[0], item[1]);
+    }
+    
+    console.log('## original data: for-of with key, map ##')
+    for (let [key, value] of map) {
+        console.log(key, value);
+    }
+    
+    console.log('## original data: map.keys() ##')
+    const keys = map.keys();
+    for (let key of keys) {
+        console.log(map.get(key));
+    }
+    
+    // forEach()를 이용해 key,value 값을 각각출력.
+    // for-of에서도 key,value를 각각 받아와 출력가능.
+    
+    
+    const oneTwoThree = [1, 2, 3];
+//    let result = oneTwoThree.map((v) => {console.log(v);return v;});
+//    
+//    oneTwoThree;
+//    result;
+//    oneTwoThree === result;
+    
+    let result = oneTwoThree.map((v) => {return v + 1;});
+    result;
+    
+})
+</script>
+
+<body>
+
+</body>
+</html>

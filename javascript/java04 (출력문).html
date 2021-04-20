@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+    // 출력문 예제
+    // 자바스크립트에서 기본 출력은 console, alert, document
+    $(function(){
+        
+    var name = 'HongGilDong';
+    // document.write(name);
+    document.getElementById("result").innerHTML = name;
+    alert(name);
+    console.log(name);
+    
+    })
+    
+    // h3는 id="result"로 선언되고 내용은 비어있음.
+    // document.write()를 이용하면 원래 html 내용을 지우고 출력.
+    // document.getElementById()는 id가 result인 태그를 찾아 이름을 출력.
+    
+    
+    </script>
+
+<body>
+    <h2>Hello World</h2>
+    <h3 id="result"></h3>
+</body>
+</html>

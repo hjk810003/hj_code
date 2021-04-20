@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // 다양한 배열 선언
+    // MAP, SET 자료구조를 활용하는 방법 익히기 예제
+    
+    var numbers1 = [10, 30, 50, 70, 90];
+    var numbers2 = new Array (20, 40, 60, 80, 100);
+    
+    var mixedArr = ['a', 1, 'b', 2, new Date(), 'today'];
+    var objArr = [
+        {
+            "id" : 210413,
+            "name" : "KIM",
+            "dept" : "SW"
+        },
+        {
+            "id" : 210414,
+            "name" : "mo",
+            "dept" : "BM"
+        },
+        {
+            "id" : 210415,
+            "name" : "Hoon",
+            "dept" : "CE"
+        }
+        
+    ];
+    
+    console.log(numbers1);
+    console.log(numbers2.length);
+    console.log(mixedArr);
+    console.log(objArr[0].name, objArr[2].dept);
+
+    // 배열의 원소에 접근해 출력하는 방법은 앞의 for문 참고
+    // 객체형 배열의 경우, 해당 인덱스 객체, 속성명(key) 형태로 값에 접근할 수 있음.
+
+})
+</script>
+
+<body>
+
+</body>
+</html>

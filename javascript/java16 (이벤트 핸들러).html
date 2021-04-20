@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // 이벤트 핸들러
+    
+    function btnClick(event) {
+        alert(event.target.value + '클릭됨');
+    }
+    
+    document.getElementById('b2').onclick = function(event) {alert(event.target.value + '클릭됨')};
+})
+</script>
+
+<body>
+    <form>
+        <input type="button" value="Button1" onclick="btnClick(event)">
+        
+        <input type="button" id="b2" value="button2">
+    </form>
+</body>
+</html>

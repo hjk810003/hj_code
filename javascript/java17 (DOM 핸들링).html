@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<!--  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<!--  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<script>
+    
+    // DOM 핸들링
+    
+    let txt4 = document.createElement('h2');
+    txt4.innerHTML = 'Text4';
+    document.body.append(txt4);
+    
+    console.log(document.getElementById('t1').innerText);
+    console.log(document.querySelectorAll('div')[1].innerHTML);
+    console.log(document.querySelector('div.t3').innerHTML);
+</script>
+
+<body>
+    <h2>hello world</h2>
+    <div id="t1">1. Text1</div>
+    <div id="t2">2. Text2</div>
+    <div id="t3">3. Text3</div>
+</body>
+</html>

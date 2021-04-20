@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<!--  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<style>
+    .tab {float:left;width:25%;padding:14px 16px;border:none;outline:none;cursor:pointer;font-size:17px;background-color:#555;color:#fff;}
+    .tab:hover {background-color:#777;}
+    .content {display:none;padding:50px;text-align:center;color:#fff;}
+    
+    #About {background-color:tomato;}
+    #Products {background-color:green;}
+    #Technology {background-color:blue;}
+    #Downloads {background-color:orange;}
+</style>
+<script>
+    
+    // 종합 예제
+    
+    // 에인화면 탭 메뉴 구현
+    // 탭 메뉴 총 4개, 메뉴를 선택하면 배너영역의 생상과 내용이 변경되는 구조
+    
+    function openMenu(target, seltab, color) {
+        
+    }
+
+   
+        
+        
+</script>
+
+<body>
+    <div id="About" class="content">
+        <h1>About</h1>
+        <p>Custom Software Development Company</p>
+    </div>
+    <div id="Products" class="content">
+        <h1>Products</h1>
+        <p>Custom Software Development Company</p>
+    </div>
+    <div id="Technology" class="content">
+        <h1>Technology</h1>
+        <p>Custom Software Development Company</p>
+    </div>
+    <div id="Downloads" class="content">
+        <h1>Downloads</h1>
+        <p>Custom Software Development Company</p>
+    </div>
+    
+    <button id="default" class="tab" onclick="openMenu('About', this, 'tomato')">About</button>
+    <button class="tab" onclick="openMenu('Products', this, 'green')">Products</button>
+    <button class="tab" onclick="openMenu('Technology', this, 'blue')">Technology</button>
+    <button class="tab" onclick="openMenu('Downloads', this, 'orange')">Downloads</button>
+</body>
+</html>

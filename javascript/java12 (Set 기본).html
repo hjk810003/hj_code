@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // Set 기본 예제
+    
+    const set = new Set();
+    set.add('KIM');
+    set.add('LEE');
+    set.add('PARK');
+    
+    console.log('## Original set: forEach ##')
+    set.forEach((value) => console.log(value));
+    
+    console.log('## Original set: for-of ##')
+    for (let item of set) {
+        console.log(item);
+    }
+    
+    set.delete('park');
+    console.log('## After delete park has: ' + set.has('park') + ' ##');
+    
+    console.log('## new Array from Set ##')
+    let arr = Array.from(set);
+    console.log(arr);
+    
+    // Array from()을 이용하면 Set을 배열로 변환 가능.
+    
+})
+</script>
+
+<body>
+
+</body>
+</html>

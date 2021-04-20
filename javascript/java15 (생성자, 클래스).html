@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // 생성자, 클래스
+    
+    function product(name, price) {
+        this.name = name;
+        this.price = price;
+        this.getInfo = function() {
+            return this.name + ' , ' + this.price;
+        }
+    }
+    
+    
+//    class product {
+//        constructor(name, price) {
+//            this.name = name;
+//            this.price = price;
+//        }
+//        
+//        getInfo() {
+//            return this.name + ' , ' + this.price; 
+//        }
+//    }
+    
+    
+    let p1 = new product('iphone', 1000);
+    let p2 = new product();
+    p2.name = 'galaxy'
+    p2.price = 1100;
+    
+    console.log(p1.getInfo());
+    console.log(p2.getInfo());
+  
+    // 생성자를 이용한 product 객체 선언과 클래스 선언.
+    // 주석을 바꿔가며 생상자,클래스 각각 테스트.
+})
+</script>
+
+<body>
+
+</body>
+</html>

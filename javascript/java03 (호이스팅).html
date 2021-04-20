@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+    // 호이스팅 예제
+    // 화면이 로딩되면 이름을 물어보고 입력된 이름을 브라우저 화면에 출력해줌
+    
+    console.log('log1: ' + txt);
+    
+    if (true) {
+        var txt = 'text';
+        console.log('log2: ' + txt);
+    }
+    
+    console.log('log3: ' + txt);
+
+    // 첫줄의 console.log('log1: ' + txt); 에서 txt 변수가 선언되지 않은 상태인데 에러발생 안함.
+    // if 안에서 txt 변수 선언, 호이스트 되어 가능.
+    // 실행시 첫번째 콘솔 출력은 에러가 아닌 undefined.
+    
+</script>
+
+<body>
+    
+
+</body>
+</html>

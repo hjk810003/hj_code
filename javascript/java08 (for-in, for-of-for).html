@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    // for-in, for-of-for
+    
+    const colors = ['red', 'blue', 'green'];
+    
+    console.log('## for-in ##');
+    for (var index in colors) {
+        console.log(colors[index]);
+    }
+    
+    console.log('## for-of-for ##');
+    for (var value of colors) {
+        console.log(value);
+    }
+    
+    // for-in 에서 index 변수 객체의 속성(배열의 경우 인덱스가 됨)이 전달됨.
+    
+})
+</script>
+
+<body>
+
+</body>
+</html>

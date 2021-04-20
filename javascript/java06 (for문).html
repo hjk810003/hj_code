@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+
+    // for
+    // 중첩 for문 사용하여 구구단 출력.
+    
+    for (let dan = 2; dan <= 9; dan++) {
+        console.log("## " + dan + " timese table ##");
+        for (let i = 1; i <= 9; i++) {
+            console.log(dan + " * " + i + " = " + dan*i);
+        }
+    }
+
+    function list_h(){
+        if(window.innerWidth > 768){
+            $('mpopZone .list li').removeAttr('style');
+            
+            var listLine = Math.ceil($('mpopZone .list li').length / 4);
+            for (i = 0; i < listLine; i++){
+                var next_p = 4 + i;
+                var arry = [];
+                for (j = 0; j < 4; j++) {
+                    var p_list = $('mpopZone .list li').eq(next_p + j).height();
+                    arry.push(p_list);
+                }
+                
+                var p_list_max = Math.max.apply(null, arry);
+                 $('mpopZone .list li').eq(next_p + 0).css('height', p_list_max);
+                 $('mpopZone .list li').eq(next_p + 1).css('height', p_list_max);
+            }
+            $('mpopZone .innerScroll').mCustomScrollbar('update');
+           }else{
+               $('mpopZone .list li')removeAttr('style');
+               $('mpopZone .innerScroll').mCustomScrollbar('destroy');
+           }
+        
+            var popH = $('.mpopZone').innerHeight(),
+                popW = $('.mpopZone').innerWidth();
+        
+            $('mpopZone').css({
+                top : 'calc(50% - '(popH / 2) +' px)',
+                left : 'calc(50% - '(popW / 2) +' px)';
+            })
+        
+        var linkNum = $('mpopZone .innerScroll').find('a').length;
+
+    }
+    
+    
+    
+    
+</script>
+
+<body>
+
+</body>
+</html>
